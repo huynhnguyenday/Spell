@@ -27,20 +27,20 @@ const MusicToggle = () => {
     };
 
     return (
-        <button
-            onClick={handleToggleMusic}
-            className="fixed top-4 right-4 p-3 bg-gray-800 text-white rounded-full shadow-lg hover:bg-gray-700 transition duration-300"
-        >
-            {isPlaying ? (
-                <p>
-                    Tắt <i className="pl-3 fa-solid fa-music"></i>
-                </p>
-            ) : (
-                <p>
-                    Bật <i className="pl-3 fa-solid fa-music"></i>
-                </p>
-            )}
-        </button>
+      <button
+        onClick={handleToggleMusic}
+        className="fixed top-4 right-4 bg-amber-300 rounded-2xl p-3 text-xl text-yellow-900 hover:scale-90 transition duration-300 shadow-lg"
+      >
+        {isPlaying ? (
+          <p>
+            Tắt <i className="pl-3 fa-solid fa-music"></i>
+          </p>
+        ) : (
+          <p>
+            Bật <i className="pl-3 fa-solid fa-music"></i>
+          </p>
+        )}
+      </button>
     );
 };
 

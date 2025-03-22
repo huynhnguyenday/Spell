@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoMdInformationCircleOutline } from "react-icons/io";
 
 const GuideModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,15 +9,15 @@ const GuideModal = () => {
       {/* Nút mở hướng dẫn */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed top-4 right-28 p-3 bg-gray-800 text-white rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
+        className="fixed top-4 right-28 bg-amber-300 rounded-2xl p-3 text-xl text-yellow-900 shadow-lg hover:scale-90 transition duration-300 mr-2 flex items-center gap-2"
       >
-        Hướng dẫn chơi
+        Hướng dẫn chơi <IoMdInformationCircleOutline size={27} />
       </button>
 
       {/* Modal hướng dẫn */}
       {isOpen && (
         <div
-          className="fixed inset-0  bg-opacity-50 flex justify-center items-center z-50 text-black text-xl"
+          className="fixed inset-0  bg-opacity-50 flex justify-center items-center z-50 text-black text-2xl"
           onClick={() => setIsOpen(false)} // Ấn ra ngoài để đóng
         >
           <div
@@ -25,7 +26,7 @@ const GuideModal = () => {
           >
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-2 right-2 text-gray-600 hover:text-red-600"
+              className="absolute top-3 right-3 text-3xl lg:hover:scale-90 transition duration-300"
             >
               ❌
             </button>

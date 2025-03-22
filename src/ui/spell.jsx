@@ -52,7 +52,7 @@ const Spell = () => {
       style={{ backgroundImage: "url('/bg.png')" }}
     >
       <button
-        className="fixed top-4 left-4 text-4xl"
+        className="fixed top-4 left-4 text-3xl bg-amber-300 rounded-2xl p-2 text-yellow-900 hover:scale-90 transition duration-300"
         onClick={() => setShowHome(true)}
       >
         <i className="fa-solid fa-home"></i>
@@ -64,7 +64,7 @@ const Spell = () => {
           <div className="bg-white p-6 rounded-3xl shadow-lg text-center relative lg:max-w-xl lg:h-64 max-w-[300px]">
             <button
               onClick={closeModal}
-              className="absolute lg:top-3 top-2 right-4 cursor-pointer text-black lg:text-gray-300 lg:hover:text-black"
+              className="absolute lg:top-3 top-2 right-4 cursor-pointer text-black lg:text-black lg:hover:scale-90 transition duration-300"
             >
               <IoIosCloseCircleOutline className="lg:text-5xl text-4xl" />
             </button>
@@ -75,7 +75,7 @@ const Spell = () => {
         </div>
       )}
 
-      <div className="w-full lg:max-w-7xl max-w-[340px] h-[550px] bg-[#f6f4d3] rounded-3xl flex justify-center items-center p-6">
+      <div className="w-full lg:max-w-7xl max-w-[340px] h-[550px] mt-8 lg:mt-0 bg-[#f6f4d3] rounded-3xl flex justify-center items-center p-6">
         <Swiper
           spaceBetween={10}
           breakpoints={{

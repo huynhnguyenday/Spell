@@ -30,7 +30,7 @@ export default function Homepage() {
 
       <button
         onClick={() => setShowSpell(true)}
-        className="px-6 lg:px-10 pt-6 pb-4 text-2xl bg-amber-300 rounded-2xl text-yellow-900 flex gap-6 cursor-pointer"
+        className="px-6 lg:px-10 pt-6 pb-4 text-2xl bg-amber-300 rounded-2xl text-yellow-900 flex gap-6 cursor-pointer hover:scale-90 transition duration-300"
       >
         BẮT ĐẦU
         <FaPlay className="text-2xl lg:text-3xl" />
