@@ -4,7 +4,7 @@ import Spell from "@ui/spell";
 import Image from "next/image";
 import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
-import MusicToggle from "../ui/MusicToggle";
+import MusicToggle from "./music-toggle";
 import GuideModal from "./guide-model";
 
 export default function Homepage() {

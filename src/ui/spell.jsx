@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { alphabet } from "./data";
 import GuideModal from "./guide-model";
 import Homepage from "./homepage";
-import MusicToggle from "./MusicToggle";
+import MusicToggle from "./music-toggle";
 
 const Spell = () => {
   const [crackedEggs, setCrackedEggs] = useState({});
